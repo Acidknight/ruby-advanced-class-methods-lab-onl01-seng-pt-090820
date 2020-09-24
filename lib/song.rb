@@ -36,6 +36,10 @@ class Song
     self.find_by_name(name) || self.create_by_name(name)
   end
   
+  def self.alphabetical
+    self.sort_by{|a| a.name}
+  end
+  
   def self.new_from_filename(name)
     song = self.new 
     song.name = (name.split(" - ")[1].chomp(".mp3"))
