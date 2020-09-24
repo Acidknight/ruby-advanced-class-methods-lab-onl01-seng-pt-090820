@@ -54,7 +54,7 @@ class Song
       name = data[0]
       artist_name = data[1]
       name.name = name
-      artist_name.name
+      artist_name.song_name = 
     end
   end
 
