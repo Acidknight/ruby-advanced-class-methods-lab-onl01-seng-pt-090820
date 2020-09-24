@@ -57,9 +57,9 @@ class Song
       song = self.new # This is an important line.
       song.song_name = song_name
       song.artist_name = song_name
+      @@all << 
       song
     end
-    songs
   end
 
 end
