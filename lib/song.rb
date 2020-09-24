@@ -49,7 +49,8 @@ class Song
   
   def self.create_from_filename(name)
     rows = name.split("/n")
-    people = rows.collect do 
+    people = rows.collect do |row|
+      
   end
 
 end
