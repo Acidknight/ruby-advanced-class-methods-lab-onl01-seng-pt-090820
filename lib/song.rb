@@ -47,19 +47,12 @@ class Song
     song
   end
   
-  def self.create_from_filename(csv_data)
-    rows = csv_data.split("\n")
-    songs = rows.collect do |row|
-      data = row.split(", ")
-      name = data[0]
-      song_name = data[1]
- 
-      song = self.new # This is an important line.
-      song.song_name = song_name
-      song.artist_name = song_name
-      @@all << song
-      song
-    end
+  def self.create_from_filename(name)
+    song = self.new
+    song.name = (name.split(" - ")[1].chomp(".mp3"))
+    song.artist_name = (name.split(" - ")[0])
+    @@all << song
+    song
   end
 
 end
