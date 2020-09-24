@@ -47,7 +47,7 @@ class Song
     song
   end
   
-  def self.new_from_csv(csv_data)
+  def self.create_from_filename(csv_data)
     rows = csv_data.split("\n")
     people = rows.collect do |row|
       data = row.split(", ")
