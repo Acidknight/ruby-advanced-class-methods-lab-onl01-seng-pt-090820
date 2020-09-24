@@ -53,7 +53,8 @@ class Song
       data = row.split(" - ")[1].chomp(".mp3")
       name = data[0]
       artist_name = data[1]
-      song_name.name = name
+      name.name = name
+      artist_name.name
     end
   end
 
