@@ -51,6 +51,7 @@ class Song
     rows = name.split("/n")
     people = rows.collect do |row|
       data = row.split(" - ")[1].chomp(".mp3")
+    end
   end
 
 end
