@@ -54,11 +54,10 @@ class Song
       name = data[0]
       song_name = data[1]
  
-      person = self.new # This is an important line.
-      person.name = name
-      person.age = age
-      person.company = company
-      person
+      song = self.new # This is an important line.
+      song.name = name
+      song.song_name = song_name
+      song
     end
     songs
   end
