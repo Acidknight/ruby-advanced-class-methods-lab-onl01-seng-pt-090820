@@ -50,7 +50,7 @@ class Song
   def self.create_from_filename(name)
     rows = name.split("/n")
     people = rows.collect do |row|
-      data = row.split(" - ")
+      data = row.split(" - ")[1].chomp(".mp3")
   end
 
 end
